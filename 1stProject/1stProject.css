@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  color: black;
+}
+
+/* Header */
+header {
+  background-color: navy;     
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+header nav a:hover {
+  color: white;
+  background-color: darkorange;
+  border-radius: 10px;
+}
+
+/* Content Section */
+
+.content {
+  background-color: lightgray; 
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.content h2 {
+  color: navy; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.food-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  width: 320px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: navy;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  font-size: 18px;
+  
+}
+
+.card button:hover {
+  background-color: darkorange;
+}
+
+/* Footer */
+
+.footerP{
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    gap: 10px;
+}
+.footerP .footer{
+    width: 30%;
+}
+.footerP .footer p{
+    text-align: justify;
+}
+.footer .footer h4{
+    font-size: 17px;
+}
+
+
+@media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 8px;
+      }
+      .footerP {
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+      }
+      .footer h4{
+        color: darkorange;
+      }
+    }
